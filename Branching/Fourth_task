@@ -1,0 +1,23 @@
+/*
+    Заданы размеры А, В прямоугольного отверстия и размеры х, у, z кирпича.
+Определить, пройдет ли кирпич через отверстие.
+ */
+import java.util.Scanner;
+public class Project {
+        public static void main(String [] args) {
+            double x,y,z,side1,side2;
+            side1=20;
+            side2=15;
+            x=31;
+            y=45;
+            z=14;
+
+            if (side1>=x && side2>=y||side1>=y && side2>=x||side1>=x && side2>=z||side1>=z && side2>=x|| side1>=z&& side2>=y||side1>=y && side2>=z)
+            {
+
+                System.out.println("Vmeshaetsya");
+            }
+            else
+                System.out.println("Net");
+        }
+}

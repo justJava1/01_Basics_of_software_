@@ -1,0 +1,31 @@
+/*
+    Найти max{min(a, b), min(c, d)}.
+ */
+import java.util.Scanner;
+public class Project {
+        public static void main(String [] args) {Scanner scan=new Scanner(System.in);
+            int a,b,c,d,min,min1,max;
+            a=2;
+            b=4;
+            c=3;
+            d=1;
+            if(a<b)
+            {
+                min=a;
+            }else
+                min=b;
+            if(c<d)
+            {
+                min1=c;
+            }
+            else
+                min1=d;
+            if(min1<min)
+            {
+                max=min;
+            }
+            else
+                max=min1;
+            System.out.println(max);
+        }
+}

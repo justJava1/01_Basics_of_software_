@@ -1,0 +1,21 @@
+/*
+   Даны два угла треугольника (в градусах).
+Определить, существует ли такой треугольник, и если да, то будет ли он прямоугольным.
+ */
+import java.util.Scanner;
+public class Project {
+        public static void main(String [] args) {
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Введите три стороны треугольника: ");
+            int first, second, res;
+            first = scan.nextInt();
+            second = scan.nextInt();
+            res = first + second;
+            if (res < 180) {
+                System.out.println("Yes");
+            }
+            if (first == 90 || second == 90 || 180 - first - second == 90) {
+                System.out.println("Pryamoug");
+            }
+        }
+}
