@@ -1,0 +1,14 @@
+/* 
+Найдите значение функции: z=((a-3)*b/2)+c;
+ */
+public class Project {
+        public static void main(String [] args)
+        {
+            float z,a,b,c;
+            c=3;
+            a=4;
+            b=2;
+            z=((a-3)*b/2)+c;
+            System.out.println(z);
+        }
+}

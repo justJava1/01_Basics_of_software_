@@ -1,0 +1,17 @@
+/*
+   Вычислить значение выражения по формуле: result=(Math.sin(x)+Math.cos(y))/(Math.cos(x)-Math.sin(y))*Math.tan(x*y);
+ */
+import java.util.Scanner;
+public class Project {
+        public static void main(String [] args)
+        {
+
+            Scanner scan=new Scanner(System.in);
+            double x,y,result;
+            System.out.println("Введите значение: y");
+            y=scan.nextDouble();
+            System.out.println("Введите значение: x");
+            x=scan.nextDouble();
+            result=(Math.sin(x)+Math.cos(y))/(Math.cos(x)-Math.sin(y))*Math.tan(x*y);
+        }
+}

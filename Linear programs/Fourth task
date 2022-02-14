@@ -1,0 +1,15 @@
+/*
+  Дано действительное число R вида nnn.ddd(три цифровых разряда в дробной и целой частях).
+  Поменять местами дробную и целую части числа и вывести полученное значение числа.
+ */
+
+public class Project {
+        public static void main(String [] args)
+        {
+            double x;
+            x=431.521;
+            int s=(int)x;
+            double res =(x-(int)x)*1000+(double)s/1000;
+            System.out.println(res);
+        }
+}
