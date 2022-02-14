@@ -1,0 +1,30 @@
+/*
+     Вычислить значения функции на отрезке [а,b] c шагом h.
+ */
+import java.util.Scanner;
+public class Project {
+        public static void main(String [] args) {
+            Scanner scan = new Scanner(System.in);
+            int x, a, b, h, f = 0;
+            System.out.println("Введите значение x: ");
+            x = scan.nextInt();
+            h = 1;//шаг=1
+            b = 13;//конец коорд.
+            a = 3;//начало коорд.
+
+            if (x > 2) {
+                for (int i = 0; x >= a && x <= b; i++) {
+
+                    f = x;
+                    x += h;
+                    System.out.println(f);
+                }
+            } else {
+                for (int i = 0; x >= a && x <= b; i++) {
+                    f = -x;
+                    x += h;
+                    System.out.println(f);
+                }
+            }
+        }
+}
